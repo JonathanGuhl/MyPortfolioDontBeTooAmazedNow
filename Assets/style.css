@@ -2,6 +2,10 @@
     box-sizing:border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 background-color: black;
 }
@@ -10,30 +14,51 @@ background-color: black;
     padding: 20px;
     font-family: 'Didot', 'Trebutchet MS', sans-serif;
     background-color: rgb(0, 174, 255);
-    color: rgb(1, 1, 152)
+    color: rgb(1, 1, 152);
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
 }
 
-.header h1 {
-    display:inline-block; 
-    font-size: 48px; 
+h1 {
+    font-size:30px;
+    margin-right:auto;
 }
 
-.header div {
-    padding-top: 15px; 
-    margin-right: 20px; 
-    float: right; 
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px; 
+.Header-flex {
+    font-family: 'Georgia', 'Times New Roman', sans-serif;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-basis:300px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
+.Head1  {
+    padding:10px;
+    flex-shrink:1;
+    font-size:24px; 
+    color:white;
+    text-decoration: none;
+    align-content:flex-start;
+} 
 
-.header div ul li {
-    display:inline-block; 
-    margin-left: 25px; 
-}
+.Head2  {
+    padding:10px;
+    flex-grow:1;
+    font-size:24px;
+    color:white;
+    text-decoration: none;
+    
+} 
+
+.Head3  {
+    padding:10px;
+    flex-grow:1;
+    font-size:24px; 
+    color:white;
+    text-decoration: none;
+} 
 
 a {
     color:aliceblue;
@@ -45,42 +70,38 @@ p {
     color:aliceblue;
 }
 
-.About-Me {
-    padding: 5%;
-    margin:auto;
-    height:420px;
+.About-flex {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    padding: 20px;
 
 }
 
-.About-Me h2 {
-    font-size: 75px;
-    color: white; 
-    width:30%;
-    text-shadow: 0 0 10px rgb(0, 174, 255);
-    float: left;
-    font-family: 'Didot', 'Trebuchet MS', sans-serif;
-}
 
-.About-Me p { 
-    font-size:29px;
-    border-left: 3px solid rgb(0, 174, 255);
-    padding: 0px 75px 0px;
-    text-align:center;
-    float:right;
-    width: 60%;
-    
-}
-
-
-.H3Header {
-    margin:0px auto 20px;
+.About1 {
+    font-size: 50px;
     padding:20px;
+    color: white; 
+    text-shadow: 0 0 10px rgb(0, 174, 255);
+    font-family: 'Didot', 'Trebuchet MS', sans-serif;
+    text-align:center;
+    border-bottom: 3px solid rgb(0, 174, 255);
+}
+
+.About2 { 
+    font-size:24px;
+    padding: 40px;
+    text-align:center;
+    
 }
 
 .Projects h3{
     font-size: 75px;
     color: white; 
-    width:30%;
+    text-align:center;
+    padding:45px;
     text-shadow: 0 0 10px rgb(0, 174, 255);
     font-family: 'Didot', 'Trebuchet MS', sans-serif;
 }   
@@ -122,5 +143,51 @@ p {
     color:white;
 }
 
+.Contact {
+    padding: 100px;
+    font-family: 'Didot', 'Trebutchet MS', sans-serif;
+    color:white;
+    text-align:center;
+}
+
+.Contact h4 {
+    font-size:50px;
+    text-shadow: 0 0 10px rgb(0, 174, 255);
+    border-bottom: 3px solid rgb(0, 174, 255);
+}
+
+.ConContainer {
+    display:flex;
+    flex-wrap: wrap;
+    flex-basis: 500px;
+    flex-direction: row;
+    justify-content: center; 
+
+}
+
+.Con1 {
+    padding:10px;
+    font-size:32px;
+    flex-shrink:1;
+}
+
+.Con2 {
+    padding:10px;
+    font-size:32px;
+    flex-shrink:1;
+}
 
 
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+body ,
+
+
+
+    
+}
