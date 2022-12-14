@@ -17,7 +17,7 @@ background-color: black;
     color: rgb(1, 1, 152);
     display:flex;
     flex-direction:row;
-    flex-wrap: wrap;
+    
 }
 
 h1 {
@@ -30,8 +30,7 @@ h1 {
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
-    justify-content: space-between;
-    flex-basis:300px;
+    flex:1 0 100%;
 }
 
 .Head1  {
@@ -177,17 +176,3 @@ p {
     flex-shrink:1;
 }
 
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-body ,
-
-
-
-    
-}
